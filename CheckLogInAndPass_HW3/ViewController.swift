@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     
 
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
      
@@ -55,6 +57,14 @@ class ViewController: UIViewController {
         userNameTextField.text = ""
         passwordTextField.text = ""
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let nav = segue.destination as? GreatingViewController else { return }
+        nav.userName = userNameTextField.text
+    }
+    
 
+
+    
 }
 

@@ -9,10 +9,17 @@ import UIKit
 
 class GreatingViewController: UIViewController {
 
+    @IBOutlet var userNameWelcome: UILabel!
+    
+    var userName: String!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        
+        userNameWelcome.text = userName
+        
     }
+
 
 }
