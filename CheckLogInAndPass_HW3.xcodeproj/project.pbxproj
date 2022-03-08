@@ -13,6 +13,7 @@
 		E32D36B127D748360025A82D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32D36AF27D748360025A82D /* Main.storyboard */; };
 		E32D36B327D748380025A82D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32D36B227D748380025A82D /* Assets.xcassets */; };
 		E32D36B627D748380025A82D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32D36B427D748380025A82D /* LaunchScreen.storyboard */; };
+		E32D36BE27D76DDF0025A82D /* GreatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32D36BD27D76DDF0025A82D /* GreatingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E32D36B227D748380025A82D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E32D36B527D748380025A82D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E32D36B727D748380025A82D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E32D36BD27D76DDF0025A82D /* GreatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				E32D36A927D748360025A82D /* AppDelegate.swift */,
 				E32D36AB27D748360025A82D /* SceneDelegate.swift */,
 				E32D36AD27D748360025A82D /* ViewController.swift */,
+				E32D36BD27D76DDF0025A82D /* GreatingViewController.swift */,
 				E32D36AF27D748360025A82D /* Main.storyboard */,
 				E32D36B227D748380025A82D /* Assets.xcassets */,
 				E32D36B427D748380025A82D /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				E32D36AE27D748360025A82D /* ViewController.swift in Sources */,
 				E32D36AA27D748360025A82D /* AppDelegate.swift in Sources */,
 				E32D36AC27D748360025A82D /* SceneDelegate.swift in Sources */,
+				E32D36BE27D76DDF0025A82D /* GreatingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
