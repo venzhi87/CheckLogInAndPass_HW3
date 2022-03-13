@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         let passwordSet = "PASSWORD"
         
         if userNameTextField.text != userNameSet || passwordTextField.text != passwordSet {
-            let alertController = UIAlertController(title: "Password Incorrect", message: "Please re-type password", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Login or password Incorrect", message: "Please re-type user name or password", preferredStyle: .alert)
             let action = UIAlertAction(title: "ok", style: .default) { (action) in
             }
             alertController.addAction(action)
