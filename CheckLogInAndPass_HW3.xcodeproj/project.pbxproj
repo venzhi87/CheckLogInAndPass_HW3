@@ -7,22 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E30BECB627E0F4600019C964 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30BECB527E0F4600019C964 /* ImageViewController.swift */; };
+		E30BECB827E0F4A60019C964 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30BECB727E0F4A60019C964 /* User.swift */; };
+		E30BECBB27E0F5750019C964 /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30BECBA27E0F5750019C964 /* Extension + UIView.swift */; };
+		E30BECC127E101DB0019C964 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30BECC027E101DB0019C964 /* UserInfoViewController.swift */; };
 		E32D36AA27D748360025A82D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32D36A927D748360025A82D /* AppDelegate.swift */; };
 		E32D36AC27D748360025A82D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32D36AB27D748360025A82D /* SceneDelegate.swift */; };
 		E32D36AE27D748360025A82D /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32D36AD27D748360025A82D /* loginViewController.swift */; };
 		E32D36B127D748360025A82D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32D36AF27D748360025A82D /* Main.storyboard */; };
-		E32D36B327D748380025A82D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32D36B227D748380025A82D /* Assets.xcassets */; };
+		E32D36B327D748380025A82D /* SwiftImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32D36B227D748380025A82D /* SwiftImage.xcassets */; };
 		E32D36B627D748380025A82D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32D36B427D748380025A82D /* LaunchScreen.storyboard */; };
 		E32D36BE27D76DDF0025A82D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32D36BD27D76DDF0025A82D /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E30BECB527E0F4600019C964 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		E30BECB727E0F4A60019C964 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E30BECBA27E0F5750019C964 /* Extension + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
+		E30BECC027E101DB0019C964 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		E32D36A627D748360025A82D /* CheckLogInAndPass_HW3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckLogInAndPass_HW3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32D36A927D748360025A82D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E32D36AB27D748360025A82D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E32D36AD27D748360025A82D /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		E32D36B027D748360025A82D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E32D36B227D748380025A82D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E32D36B227D748380025A82D /* SwiftImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SwiftImage.xcassets; sourceTree = "<group>"; };
 		E32D36B527D748380025A82D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E32D36B727D748380025A82D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E32D36BD27D76DDF0025A82D /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +47,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E30BECB227E0F3C70019C964 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E32D36AD27D748360025A82D /* loginViewController.swift */,
+				E32D36BD27D76DDF0025A82D /* WelcomeViewController.swift */,
+				E30BECC027E101DB0019C964 /* UserInfoViewController.swift */,
+				E30BECB527E0F4600019C964 /* ImageViewController.swift */,
+				E30BECB927E0F4AA0019C964 /* Models */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E30BECB927E0F4AA0019C964 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E30BECB727E0F4A60019C964 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E30BECBC27E0F5850019C964 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E30BECBA27E0F5750019C964 /* Extension + UIView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E30BECBD27E0F5BA0019C964 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				E32D36AF27D748360025A82D /* Main.storyboard */,
+				E32D36B427D748380025A82D /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
 		E32D369D27D748360025A82D = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +103,12 @@
 		E32D36A827D748360025A82D /* CheckLogInAndPass_HW3 */ = {
 			isa = PBXGroup;
 			children = (
+				E30BECB227E0F3C70019C964 /* ViewControllers */,
+				E30BECBC27E0F5850019C964 /* Extension */,
+				E30BECBD27E0F5BA0019C964 /* StoryBoards */,
+				E32D36B227D748380025A82D /* SwiftImage.xcassets */,
 				E32D36A927D748360025A82D /* AppDelegate.swift */,
 				E32D36AB27D748360025A82D /* SceneDelegate.swift */,
-				E32D36AD27D748360025A82D /* loginViewController.swift */,
-				E32D36BD27D76DDF0025A82D /* WelcomeViewController.swift */,
-				E32D36AF27D748360025A82D /* Main.storyboard */,
-				E32D36B227D748380025A82D /* Assets.xcassets */,
-				E32D36B427D748380025A82D /* LaunchScreen.storyboard */,
 				E32D36B727D748380025A82D /* Info.plist */,
 			);
 			path = CheckLogInAndPass_HW3;
@@ -129,7 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E32D36B627D748380025A82D /* LaunchScreen.storyboard in Resources */,
-				E32D36B327D748380025A82D /* Assets.xcassets in Resources */,
+				E32D36B327D748380025A82D /* SwiftImage.xcassets in Resources */,
 				E32D36B127D748360025A82D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,9 +186,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E32D36AE27D748360025A82D /* loginViewController.swift in Sources */,
+				E30BECC127E101DB0019C964 /* UserInfoViewController.swift in Sources */,
 				E32D36AA27D748360025A82D /* AppDelegate.swift in Sources */,
 				E32D36AC27D748360025A82D /* SceneDelegate.swift in Sources */,
+				E30BECBB27E0F5750019C964 /* Extension + UIView.swift in Sources */,
+				E30BECB627E0F4600019C964 /* ImageViewController.swift in Sources */,
 				E32D36BE27D76DDF0025A82D /* WelcomeViewController.swift in Sources */,
+				E30BECB827E0F4A60019C964 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +341,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HWT7FTR5D2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CheckLogInAndPass_HW3/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -321,6 +370,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HWT7FTR5D2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CheckLogInAndPass_HW3/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

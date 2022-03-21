@@ -11,7 +11,7 @@ class WelcomeViewController: UIViewController {
 
     @IBOutlet var userNameWelcome: UILabel!
     
-    var user = ""
+    var user: User!
     
     private let primaryColor = UIColor(
         red: 210/255,
@@ -30,18 +30,8 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-        userNameWelcome.text = "Welcome, \(user)!"
+        userNameWelcome.text = "Welcome, \(user.person.fullName)!"
     }
 }
 
-extension UIView {
-    func addVerticalGradientLayer(topColor: UIColor, bottomColor: UIColor) {
-        let gradient = CAGradientLayer()
-        gradient.frame = bounds
-        gradient.colors = [topColor.cgColor, bottomColor.cgColor]
-        gradient.locations = [0.0, 1.0]
-        gradient.startPoint = CGPoint(x: 0, y: 0)
-        gradient.endPoint = CGPoint(x: 0, y: 1)
-        layer.insertSublayer(gradient, at: 0)
-    }
-}
+

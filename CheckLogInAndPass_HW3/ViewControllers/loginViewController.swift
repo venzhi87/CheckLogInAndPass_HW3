@@ -12,16 +12,24 @@ class loginViewController: UIViewController {
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    private let user = "Pavel"
-    private let password = "PASSWORD"
+    private let user = User.getUserData()
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.user = user
+        guard let tabBarController = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarController.viewControllers else { return }
+        
+        viewControllers.forEach {
+            if let welcomeVC = $0 as? WelcomeViewController {
+                welcomeVC.user = user
+            } else if let navigationVC = $0 as? UINavigationController {
+                guard let userInfoVC = navigationVC.topViewController as? UserInfoViewController else { return }
+                userInfoVC.user = user
+            }
+        }
     }
     
     @IBAction func logInButtonPressed() {
-        guard userNameTextField.text == user, passwordTextField.text == password else {
+        guard userNameTextField.text == user.login, passwordTextField.text == user.password else {
             showAlert(
                 title: "Login or password Incorrect",
                 message: "Please, re-type user name or password",
@@ -34,8 +42,8 @@ class loginViewController: UIViewController {
     
     @IBAction func showAuthorizationData(_ sender: UIButton) {
         sender.tag == 0
-        ? showAlert(title: "Oops!", message: "Your name is \(user) 😘")
-        : showAlert(title: "Oops!", message: "Your password is \(password) 😘")
+        ? showAlert(title: "Oops!", message: "Your name is \(user.login) 😘")
+        : showAlert(title: "Oops!", message: "Your password is \(user.password) 😘")
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
